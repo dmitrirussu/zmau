@@ -13,10 +13,10 @@ A practical functional library for JavaScript programmers.
 Why Zmau?
 ----------
 
-<img src="https://ramdajs.com/ramdaFilled_200x235.png" 
+<img src="https://ramdajs.com/ramdaFilled_200x235.png"
      width="170" height="190" align="right" hspace="12" />
 
-There are already several excellent libraries with a functional flavor. Typically, they are meant to be general-purpose toolkits, suitable for working in multiple paradigms. Zmau has a more focused goal. We wanted a library designed specifically for a functional programming style, one that makes it easy to create functional pipelines, one that never mutates user data. 
+There are already several excellent libraries with a functional flavor. Typically, they are meant to be general-purpose toolkits, suitable for working in multiple paradigms. Zmau has a more focused goal. We wanted a library designed specifically for a functional programming style, one that makes it easy to create functional pipelines, one that never mutates user data.
 
 
 
@@ -25,14 +25,14 @@ What's Different?
 
 The primary distinguishing features of Zmau are:
 
-* Zmau emphasizes a purer functional style. Immutability and side-effect free functions 
-  are at the heart of its design philosophy. This can help you get the job done with simple, 
+* Zmau emphasizes a purer functional style. Immutability and side-effect free functions
+  are at the heart of its design philosophy. This can help you get the job done with simple,
   elegant code.
 
-* Zmau functions are automatically curried. This allows you to easily build up new functions 
+* Zmau functions are automatically curried. This allows you to easily build up new functions
   from old ones simply by not supplying the final parameters.
 
-* The parameters to Zmau functions are arranged to make it convenient for currying. The data 
+* The parameters to Zmau functions are arranged to make it convenient for currying. The data
   to be operated on is generally supplied last.
 
 The last two points together make it very easy to build functions as sequences of simpler functions, each of which transforms the data and passes it along to the next. Zmau is designed to support this style of coding.
@@ -55,7 +55,7 @@ Philosophy
 ----------
 Using Zmau should feel much like just using JavaScript.
 It is practical, functional JavaScript. We're not introducing
-lambda expressions in strings, we're not borrowing consed 
+lambda expressions in strings, we're not borrowing consed
 lists, we're not porting over all of the Clojure functions.
 
 Our basic data structures are plain JavaScript objects, and our
@@ -63,7 +63,7 @@ usual collections are JavaScript arrays. We also keep other
 native features of JavaScript, such as functions as objects
 with properties.
 
-Functional programming is in good part about immutable objects and 
+Functional programming is in good part about immutable objects and
 side-effect free functions. While Zmau does not *enforce* this, it
 enables such style to be as frictionless as possible.
 
@@ -134,11 +134,11 @@ Or better yet, import only the required functions via `import { functionName } f
 
 #### Partial Builds
 
-It is possible to build Zmau with a subset of the functionality to reduce its file size. Zmau's build system supports this with command line flags. For example if you're using `R.compose`, `R.reduce`, and `R.filter` you can create a partial build with:
+It is possible to build Zmau with a subset of the functionality to reduce its file size. Zmau's build system supports this with command line flags. For example if you're using `Z.compose`, `Z.reduce`, and `Z.filter` you can create a partial build with:
 
     npm run --silent partial-build compose reduce filter > dist/zmau.custom.js
 
-This requires having Node/io.js installed and zmau's dependencies installed (just use `npm install` before running partial build). 
+This requires having Node/io.js installed and zmau's dependencies installed (just use `npm install` before running partial build).
 
 ### Install specific functions
 
@@ -155,10 +155,10 @@ Also available is our [Cookbook](https://github.com/zmau/zmau/wiki/Cookbook) of 
 The Name
 --------
 
-Ok, so we like sheep.  That's all.  It's a short name, not already 
-taken.  It could as easily have been `eweda`, but then we would be 
-forced to say _eweda lamb!_, and no one wants that.  For non-English 
-speakers, lambs are baby sheep, ewes are female sheep, and rams are male 
+Ok, so we like sheep.  That's all.  It's a short name, not already
+taken.  It could as easily have been `eweda`, but then we would be
+forced to say _eweda lamb!_, and no one wants that.  For non-English
+speakers, lambs are baby sheep, ewes are female sheep, and rams are male
 sheep.  So perhaps zmau is a grown-up lambda... but probably not.
 
 
@@ -202,10 +202,10 @@ Usage
 For `v0.25` and up, import the whole library or pick ES modules directly from the library:
 
 ```js
-import * as R from 'zmau'
+import * as Z from 'zmau'
 
-const {identity} = R
-R.map(identity, [1, 2, 3])
+const {identity} = Z
+Z.map(identity, [1, 2, 3])
 ```
 
 Destructuring imports from zmau *does not necessarily prevent importing the entire library*. You can manually cherry-pick methods like the following, which would only grab the parts necessary for `identity` to work:
@@ -247,5 +247,5 @@ Acknowledgements
 -----------------
 
 Thanks to [J. C. Phillipps](http://www.jcphillipps.com) for the Zmau logo.
-Zmau logo artwork &copy; 2014 J. C. Phillipps. Licensed Creative Commons 
+Zmau logo artwork &copy; 2014 J. C. Phillipps. Licensed Creative Commons
 [CC BY-NC-SA 3.0](http://creativecommons.org/licenses/by-nc-sa/3.0/).
