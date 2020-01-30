@@ -239,6 +239,7 @@ Translations
 - [Ukrainian(Українська)](https://github.com/ivanzusko/zmau)
 - [Portuguese(BR)](https://github.com/renansj/zmau)
 - [Russian(Русский)](https://github.com/Guck111/zmau)
+- Rumanian(in progress)
 
 
 
