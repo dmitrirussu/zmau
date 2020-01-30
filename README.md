@@ -13,7 +13,7 @@ A practical functional library for JavaScript programmers.
 Why Zmau?
 ----------
 
-<img src="https://ramdajs.com/ramdaFilled_200x235.png"
+<img src="https://images-na.ssl-images-amazon.com/images/I/41qCVjLOs0L.jpg"
      width="170" height="190" align="right" hspace="12" />
 
 There are already several excellent libraries with a functional flavor. Typically, they are meant to be general-purpose toolkits, suitable for working in multiple paradigms. Zmau has a more focused goal. We wanted a library designed specifically for a functional programming style, one that makes it easy to create functional pipelines, one that never mutates user data.
