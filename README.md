@@ -125,7 +125,7 @@ Or you can inject zmau into virtually any unsuspecting website using [the bookma
 
 **Note for versions > 0.25**
 Zmau versions > 0.25 don't have a default export.
-So instead of `import R from 'zmau';`, one has to use `import * as R from 'zmau';`
+So instead of `import Z from 'zmau';`, one has to use `import * as Z from 'zmau';`
 Or better yet, import only the required functions via `import { functionName } from 'zmau';`
 
 ### Build
